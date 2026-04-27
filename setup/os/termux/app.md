@@ -17,7 +17,7 @@ pkg install nodejs esbuild golang rust php composer python python-pip -y
 # use main because latest ver. have bug for pnpm
 go install github.com/google/osv-scanner/cmd/osv-scanner@main
 # install pnpm
-pnpm i -g pnpm                                                
+npm i -g pnpm                                                
 # tools live server
 Ppnpm i -g live-server                                        
 # install wordpress

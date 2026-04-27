@@ -1,12 +1,12 @@
 ## browser install
 
 ### chromium
-```sh
+```bash
 apt-get install chromium -y
 ```
 > [!IMPORTANT]
 > for proot distro, execute this
-```sh
+```bash
 rm /bin/chromium_real
 mv /bin/chromium /bin/chromium_real
 touch /bin/chromium
@@ -22,11 +22,11 @@ EOF
 ```
 
 ### firefox
-```sh
+```bash
 apt-get install firefox-esr -y
 ```
 ### brave
-```sh
+```bash
 curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main" | tee /etc/apt/sources.list.d/brave-browser-release.list
 apt update
@@ -34,7 +34,7 @@ apt install brave-browser -y
 ```
 > [!IMPORTANT]
 > for proot distro, execute this
-```sh
+```bash
 # make brave use no sandbox as default
 rm /bin/brave-browser-stable-bin
 mv /bin/brave-browser-stable /bin/brave-browser-stable-bin
